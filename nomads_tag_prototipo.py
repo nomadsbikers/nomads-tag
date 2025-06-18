@@ -59,8 +59,6 @@ def status(tag_id):
         moto['stolen'] = True
     return render_template_string(estado_html, make=moto['make'], model=moto['model'], stolen=moto['stolen'])
 
-if __name__ == '__main__':
-    app.run(debug=True)
     import os
 
 if __name__ == '__main__':
